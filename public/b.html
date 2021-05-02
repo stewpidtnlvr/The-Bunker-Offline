@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Math Help</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        h2:hover {
+cursor:default;
+            background-color: #ffffff00;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        input {
+            color: #ffffff00;
+            background-color: #ffffff00;
+            border: none;
+            scrollbar-highlight-color: #ffffff00;
+            width: 1px; 
+            height: 1px;
+            border-style: none;
+        }
+        
+    </style>
+    </head>
+    <body>
+<center>
+<h1 style="position: static; color: hsl(157, 100%, 50%);">Bookmarklets lol</h1>
+</center>
+<center style="color: hsl(157, 100%, 50%);">
+this is the beta page (click on the descriptions to copy the code)
+</center>
+<center>
+    <a href="index.html">Back</a>
+</center>
+<center>
+ <a onclick="myFunction()">1. Put a fly on your web page (trigger warning)</a>
+ </center>
+ <center>
+<input id="one" type="text" value="javascript:var e=window.document.createElement('script');e.setAttribute('src','https://urugate.com/fly3.js');window.document.body.appendChild(e);void(0);">
+ </center>
+<center>
+<a onclick="myFunctionTwo()"> 2. Turn every image into a rick roll (made by yours truly)</a>
+ </center>
+ <center>
+<input id="two" type="text" value="javascript:(function(){Array.prototype.slice.call(document.querySelectorAll('img')).map(function(el){el.src = 'https://media.tenor.com/images/d0f644525d3be9eb3b287edca97d20f4/tenor.gif';});}())">
+ </center>
+<script>
+    function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("one");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+function myFunctionTwo() {
+  /* Get the text field */
+  var copyText = document.getElementById("two");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+} 
+</script> 
+</body>
+</html>

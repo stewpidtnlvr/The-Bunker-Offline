@@ -1,0 +1,309 @@
+body {
+  margin: 0;
+  padding: 0;
+ /* display: flex;*/
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: black;
+  font-family: 'Press Start 2P', cursive;  
+  background-repeat: no-repeat;
+    background-size: cover;
+  /*cursor: none;*/
+  background-image: url('satisfying.gif');
+  background-repeat: no-repeat;
+}
+a
+{
+  position: static;
+  /*display: inline-block;*/
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: visible;
+  transition: 0.2s;
+  left: 0%;
+  display: block;
+  /*width: 96px;*/
+  float: center;
+  /*margin-left: /*35%*//*none;*/
+ /* margin-right: none;*/
+    top: 50px;
+margin-bottom: 15px;
+}
+a:hover
+{
+  color: black;
+  background-color:  hsl(157, 100%, 50%);
+  box-shadow:  0 0 10px hsl(157, 100%, 50%), 0 0 400px hsl(157, 100%, 50%), 0 0 80px hsl(157, 100%, 50%);
+  font-size: 22px;
+  /*cursor: none;*/
+}
+a:active {
+  font-size: 20px;
+}
+h1 {
+  position: absolute;
+}
+.neon
+{
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: /*3em;*/ 50px;
+  color: #fff;
+  text-shadow: 0 0 20px hsl(157, 100%, 50%);
+  width: 100%; 
+}
+                                                                                                    
+.neon:after
+{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  padding: 0 20px;
+  z-index: -1;
+  color:hsl(157, 100%, 50%);
+  filter: blur(30px);
+}
+.neon:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(157, 100%, 50%);
+  z-index: -2;
+  opacity: .5;
+  filter: blur(30px);
+}
+.credit {
+  font-family: monospace;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+h2
+{
+  position: static;
+  /*display: inline-block;*/
+  padding: 15px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-decoration: none;
+  font-size: 35px;
+  overflow: visible;
+  transition: 0.5s;
+  left: 0%;
+  display: block;
+  /*width: 96px;*/
+  float: center;
+  /*margin-left: /*35%*//*none;*/
+ /* margin-right: none;*/
+top: 5%;
+}
+h2:hover
+{
+  color: #ae00b4;
+  background-color: #f700ff;
+  box-shadow:  0 0 10px #fc1f4f, 0 0 400px #fc1f4f, 0 0 80px #fc1f4f;
+  cursor: pointer; 
+}
+#exit{
+  display: none; 
+  top: 90%;
+  position: center; 
+  float: center; 
+  margin-bottom: 0%;
+  
+}
+#headlol {
+        /* bottom: 50%;  */  
+             }
+footer{
+             color: purple;
+             }
+            
+             .fo0ter {
+               top: 90%; 
+               border-radius: 8px; 
+               font-size: 10px; 
+               height: 80px; 
+               text-align: center; 
+               display: block; 
+               color: purple; 
+               margin-top: 2px; 
+  }
+  /*##################################*/       
+  /* animation: cursorAnim .5s infinite alternate;*/
+    .cursor {
+        width: 20px;
+        height: 20px;
+        border: 1px solid purple;
+        border-radius: 50%;
+        position: absolute;
+        transition-duration: 200ms;
+        transition-timing-function: ease-out;
+        pointer-events: none;
+        visibility: hidden;
+      }
+  
+  /*##################################*/
+        /*animation: cursorAnim2 .5s infinite alternate;*/
+
+    /*  .cursor::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border: 8px solid purple;
+        border-radius: 50%;
+        opacity: .5;
+        top: -8px;
+        left: -8px;
+      }*/
+   @keyframes cursorAnim {
+        from {
+          transform: scale(1);
+        }
+
+        to {
+          transform: scale(.7);
+        }
+      }
+
+      @keyframes cursorAnim2 {
+       from {
+          transform: scale(1);
+        }
+
+        to {
+          transform: scale(.4);
+        }
+      }
+      @keyframes cursorAnim3 {
+        0% {
+          transform: scale(1);
+          visibility: visible; 
+        }
+
+        50% {
+          transform: scale(3);
+
+        }
+
+        100% {
+          transform: scale(1);
+          opacity: 0;
+          viibility: hidden;
+        }
+      }
+
+      .expand {
+        animation: cursorAnim3 .5s forwards;
+        border: 1px solid cyan;
+        background-color: cyan;
+      }
+  
+  #o {
+    
+  }
+  #container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+  .footer a{
+  color: white;
+    font-family: '2P Press Start';
+    font-size: 16px;
+  text-shadow: purple;
+}
+.foreward  {
+   color: white;
+   font-family: 'PRESS START 2P';
+   position: absolute;
+   top: 0%;
+   font-size: 16px;
+   text-align: center;
+   padding: 2px, 0px;
+   width: 300px;
+   /*left: 75%;*/
+   right: 0;
+   transition: 0.2s; 
+   left: 75%;
+  }
+  .foreward:hover{
+    font-size: 20px;
+  }
+  #cursorfish  {
+    width: 5%;
+    border-radius: 50%;
+    display: none;
+    border: 1px solid purple;
+  }
+  .click {
+    animation-name: click;
+    animation-duration: 0.5s;
+  }
+  @keyframes click {
+    0%{display: visible; width: 5%; opacity: 1;}
+    25%{display: visible; width: 10%; opacity: 0.75;}
+    50%{display: visible; width: 15%; opacity: 0.5;}
+    75%{display: visible; width: 15%; opacity: 0.25;}
+    100%{display: none; width: 5%; opacity: 1;}
+  }
+  .back  {
+   background-color: #ffffff00;
+   color: white;
+   font-family: 'PRESS START 2P';
+   position: absolute;
+   float: left;
+   top: 0%;
+   font-size: 16px;
+   text-align: center;
+   padding: 2px, 8px;
+   width: 600px;
+  }
+  .back::hover{
+    width: 600px;
+  }
+
+  .huh{
+    margin-top: 200px;
+    color: #ffffff00;
+    font-size: 16em;
+  }
+
+  #credita {
+
+  } 
+   #credita:hover {
+background-color: navy;
+  } 
+#one {
+  
+}
+#two {
+  
+}
+
+#three {
+
+}
+#uhhh {
+  top: 300px;
+}
